@@ -1,0 +1,12 @@
+D:\BSTU stuff\6 семестр 3 курс\РИС\РИС Лабораторные работы 2018-2019\Лаб4\TimePolling\bin\Debug\net6.0\TimePolling.deps.json
+D:\BSTU stuff\6 семестр 3 курс\РИС\РИС Лабораторные работы 2018-2019\Лаб4\TimePolling\bin\Debug\net6.0\TimePolling.dll
+D:\BSTU stuff\6 семестр 3 курс\РИС\РИС Лабораторные работы 2018-2019\Лаб4\TimePolling\bin\Debug\net6.0\ref\TimePolling.dll
+D:\BSTU stuff\6 семестр 3 курс\РИС\РИС Лабораторные работы 2018-2019\Лаб4\TimePolling\bin\Debug\net6.0\TimePolling.pdb
+D:\BSTU stuff\6 семестр 3 курс\РИС\РИС Лабораторные работы 2018-2019\Лаб4\TimePolling\obj\Debug\net6.0\TimePolling.csproj.AssemblyReference.cache
+D:\BSTU stuff\6 семестр 3 курс\РИС\РИС Лабораторные работы 2018-2019\Лаб4\TimePolling\obj\Debug\net6.0\TimePolling.GeneratedMSBuildEditorConfig.editorconfig
+D:\BSTU stuff\6 семестр 3 курс\РИС\РИС Лабораторные работы 2018-2019\Лаб4\TimePolling\obj\Debug\net6.0\TimePolling.AssemblyInfoInputs.cache
+D:\BSTU stuff\6 семестр 3 курс\РИС\РИС Лабораторные работы 2018-2019\Лаб4\TimePolling\obj\Debug\net6.0\TimePolling.AssemblyInfo.cs
+D:\BSTU stuff\6 семестр 3 курс\РИС\РИС Лабораторные работы 2018-2019\Лаб4\TimePolling\obj\Debug\net6.0\TimePolling.csproj.CoreCompileInputs.cache
+D:\BSTU stuff\6 семестр 3 курс\РИС\РИС Лабораторные работы 2018-2019\Лаб4\TimePolling\obj\Debug\net6.0\TimePolling.dll
+D:\BSTU stuff\6 семестр 3 курс\РИС\РИС Лабораторные работы 2018-2019\Лаб4\TimePolling\obj\Debug\net6.0\ref\TimePolling.dll
+D:\BSTU stuff\6 семестр 3 курс\РИС\РИС Лабораторные работы 2018-2019\Лаб4\TimePolling\obj\Debug\net6.0\TimePolling.pdb

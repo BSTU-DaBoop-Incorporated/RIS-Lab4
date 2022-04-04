@@ -1,0 +1,68 @@
+2022-04-03 17:28:01.096 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-03 17:28:01.110 +03:00 [INF] Hosting environment: Development
+2022-04-03 17:28:01.111 +03:00 [INF] Content root path: D:\BSTU stuff\6 семестр 3 курс\РИС\РИС Лабораторные работы 2018-2019\Лаб4\WebServer\
+2022-04-03 17:28:01.116 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44388/ - -
+2022-04-03 17:28:01.151 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44388/ - - - 404 - - 38.8390ms
+2022-04-03 17:28:43.528 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44388/api/poll/time - -
+2022-04-03 17:28:43.535 +03:00 [INF] Executing endpoint 'WebServer.Controllers.WebServerController.Time (WebServer)'
+2022-04-03 17:28:43.564 +03:00 [INF] Route matched with {action = "Time", controller = "WebServer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Time(Int32) on controller WebServer.Controllers.WebServerController (WebServer).
+2022-04-03 17:28:43.576 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Int64'.
+2022-04-03 17:28:43.599 +03:00 [INF] Executed action WebServer.Controllers.WebServerController.Time (WebServer) in 29.1266ms
+2022-04-03 17:28:43.600 +03:00 [INF] Executed endpoint 'WebServer.Controllers.WebServerController.Time (WebServer)'
+2022-04-03 17:28:43.601 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44388/api/poll/time - - - 200 - application/json;+charset=utf-8 73.3736ms
+2022-04-03 17:29:21.517 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44388/api/poll/status - -
+2022-04-03 17:29:21.518 +03:00 [INF] Executing endpoint 'WebServer.Controllers.WebServerController.Status (WebServer)'
+2022-04-03 17:29:21.519 +03:00 [INF] Route matched with {action = "Status", controller = "WebServer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Status(Int32) on controller WebServer.Controllers.WebServerController (WebServer).
+2022-04-03 17:29:21.520 +03:00 [INF] Executing OkObjectResult, writing value of type 'TimePolling.Status'.
+2022-04-03 17:29:21.525 +03:00 [INF] Executed action WebServer.Controllers.WebServerController.Status (WebServer) in 6.2813ms
+2022-04-03 17:29:21.525 +03:00 [INF] Executed endpoint 'WebServer.Controllers.WebServerController.Status (WebServer)'
+2022-04-03 17:29:21.526 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44388/api/poll/status - - - 200 - application/json;+charset=utf-8 8.8818ms
+2022-04-03 17:30:54.533 +03:00 [INF] Application is shutting down...
+2022-04-03 17:31:03.600 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-03 17:31:03.612 +03:00 [INF] Hosting environment: Development
+2022-04-03 17:31:03.613 +03:00 [INF] Content root path: D:\BSTU stuff\6 семестр 3 курс\РИС\РИС Лабораторные работы 2018-2019\Лаб4\WebServer\
+2022-04-03 17:31:03.617 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44388/ - -
+2022-04-03 17:31:03.650 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44388/ - - - 404 - - 35.7704ms
+2022-04-03 17:31:20.218 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44388/api/poll/time - -
+2022-04-03 17:31:20.225 +03:00 [INF] Executing endpoint 'WebServer.Controllers.WebServerController.Time (WebServer)'
+2022-04-03 17:31:20.252 +03:00 [INF] Route matched with {action = "Time", controller = "WebServer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Time(Int32) on controller WebServer.Controllers.WebServerController (WebServer).
+2022-04-03 17:31:20.265 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Int64'.
+2022-04-03 17:31:20.282 +03:00 [INF] Executed action WebServer.Controllers.WebServerController.Time (WebServer) in 25.3476ms
+2022-04-03 17:31:20.283 +03:00 [INF] Executed endpoint 'WebServer.Controllers.WebServerController.Time (WebServer)'
+2022-04-03 17:31:20.286 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44388/api/poll/time - - - 200 - application/json;+charset=utf-8 67.5331ms
+2022-04-03 17:31:23.582 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44388/api/poll/status - -
+2022-04-03 17:31:23.583 +03:00 [INF] Executing endpoint 'WebServer.Controllers.WebServerController.Status (WebServer)'
+2022-04-03 17:31:23.584 +03:00 [INF] Route matched with {action = "Status", controller = "WebServer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Status(Int32) on controller WebServer.Controllers.WebServerController (WebServer).
+2022-04-03 17:31:23.585 +03:00 [INF] Executing OkObjectResult, writing value of type 'TimePolling.Status'.
+2022-04-03 17:31:23.590 +03:00 [INF] Executed action WebServer.Controllers.WebServerController.Status (WebServer) in 5.9792ms
+2022-04-03 17:31:23.590 +03:00 [INF] Executed endpoint 'WebServer.Controllers.WebServerController.Status (WebServer)'
+2022-04-03 17:31:23.591 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44388/api/poll/status - - - 200 - application/json;+charset=utf-8 8.2845ms
+2022-04-03 17:31:58.048 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44388/api/poll/status - -
+2022-04-03 17:31:58.048 +03:00 [INF] Executing endpoint 'WebServer.Controllers.WebServerController.Status (WebServer)'
+2022-04-03 17:31:58.049 +03:00 [INF] Route matched with {action = "Status", controller = "WebServer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Status(Int32) on controller WebServer.Controllers.WebServerController (WebServer).
+2022-04-03 17:31:58.049 +03:00 [INF] Executing OkObjectResult, writing value of type 'TimePolling.Status'.
+2022-04-03 17:31:58.049 +03:00 [INF] Executed action WebServer.Controllers.WebServerController.Status (WebServer) in 0.7534ms
+2022-04-03 17:31:58.049 +03:00 [INF] Executed endpoint 'WebServer.Controllers.WebServerController.Status (WebServer)'
+2022-04-03 17:31:58.050 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44388/api/poll/status - - - 200 - application/json;+charset=utf-8 1.4393ms
+2022-04-03 17:31:59.737 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44388/api/poll/time - -
+2022-04-03 17:31:59.737 +03:00 [INF] Executing endpoint 'WebServer.Controllers.WebServerController.Time (WebServer)'
+2022-04-03 17:31:59.737 +03:00 [INF] Route matched with {action = "Time", controller = "WebServer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Time(Int32) on controller WebServer.Controllers.WebServerController (WebServer).
+2022-04-03 17:31:59.737 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Int64'.
+2022-04-03 17:31:59.737 +03:00 [INF] Executed action WebServer.Controllers.WebServerController.Time (WebServer) in 0.3433ms
+2022-04-03 17:31:59.738 +03:00 [INF] Executed endpoint 'WebServer.Controllers.WebServerController.Time (WebServer)'
+2022-04-03 17:31:59.738 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44388/api/poll/time - - - 200 - application/json;+charset=utf-8 0.8428ms
+2022-04-03 17:32:00.774 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44388/api/poll/status - -
+2022-04-03 17:32:00.774 +03:00 [INF] Executing endpoint 'WebServer.Controllers.WebServerController.Status (WebServer)'
+2022-04-03 17:32:00.774 +03:00 [INF] Route matched with {action = "Status", controller = "WebServer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Status(Int32) on controller WebServer.Controllers.WebServerController (WebServer).
+2022-04-03 17:32:00.774 +03:00 [INF] Executing OkObjectResult, writing value of type 'TimePolling.Status'.
+2022-04-03 17:32:00.774 +03:00 [INF] Executed action WebServer.Controllers.WebServerController.Status (WebServer) in 0.3238ms
+2022-04-03 17:32:00.774 +03:00 [INF] Executed endpoint 'WebServer.Controllers.WebServerController.Status (WebServer)'
+2022-04-03 17:32:00.774 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44388/api/poll/status - - - 200 - application/json;+charset=utf-8 0.7422ms
+2022-04-03 17:32:15.378 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44388/api/poll/status - -
+2022-04-03 17:32:15.379 +03:00 [INF] Executing endpoint 'WebServer.Controllers.WebServerController.Status (WebServer)'
+2022-04-03 17:32:15.379 +03:00 [INF] Route matched with {action = "Status", controller = "WebServer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Status(Int32) on controller WebServer.Controllers.WebServerController (WebServer).
+2022-04-03 17:32:15.379 +03:00 [INF] Executing OkObjectResult, writing value of type 'TimePolling.Status'.
+2022-04-03 17:32:15.379 +03:00 [INF] Executed action WebServer.Controllers.WebServerController.Status (WebServer) in 0.535ms
+2022-04-03 17:32:15.379 +03:00 [INF] Executed endpoint 'WebServer.Controllers.WebServerController.Status (WebServer)'
+2022-04-03 17:32:15.380 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44388/api/poll/status - - - 200 - application/json;+charset=utf-8 1.1274ms
+2022-04-03 17:32:23.043 +03:00 [INF] Application is shutting down...

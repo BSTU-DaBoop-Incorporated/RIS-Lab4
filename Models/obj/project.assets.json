@@ -1,0 +1,104 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "GuerrillaNtp/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/GuerrillaNtp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/GuerrillaNtp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GuerrillaNtp/2.0.1": {
+      "sha512": "eRU0eVeTKxDtm3f1GrFjKCNZNTuEhvlFCmDui2qgIMaNnOatbEKtox2qLqTfc/FtdkMemqdzeJyZE+vf3wPlqg==",
+      "type": "package",
+      "path": "guerrillantp/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "guerrillantp.2.0.1.nupkg.sha512",
+        "guerrillantp.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/GuerrillaNtp.dll",
+        "lib/netstandard2.0/GuerrillaNtp.xml"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "GuerrillaNtp >= 2.0.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Vadim\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\BSTU stuff\\6 семестр 3 курс\\РИС\\РИС Лабораторные работы 2018-2019\\Лаб4\\Models\\Models.csproj",
+      "projectName": "Models",
+      "projectPath": "D:\\BSTU stuff\\6 семестр 3 курс\\РИС\\РИС Лабораторные работы 2018-2019\\Лаб4\\Models\\Models.csproj",
+      "packagesPath": "C:\\Users\\Vadim\\.nuget\\packages\\",
+      "outputPath": "D:\\BSTU stuff\\6 семестр 3 курс\\РИС\\РИС Лабораторные работы 2018-2019\\Лаб4\\Models\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Vadim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "GuerrillaNtp": {
+            "target": "Package",
+            "version": "[2.0.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
