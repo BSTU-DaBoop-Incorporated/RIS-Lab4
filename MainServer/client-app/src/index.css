@@ -16,3 +16,8 @@ code {
   color: red;
   font-weight: 500;
 }
+
+.ok {
+  color: green;
+  font-weight: 500;
+}

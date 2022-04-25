@@ -12,6 +12,12 @@ const Poll = () => {
   const [error, setError] = useState("");
   const [isStatusPolling, setIsStatusPolling] = useState(false);
 
+  const [isDataPulling, setIsDataPulling] = useState(false);
+  const [pulledData, setPulledData] = useState(undefined);
+
+  const [isDataPushing, setIsDataPushing] = useState(false);
+  const [pushedStatus, setPushedStatus] = useState("");
+
   const pollTime = () => {
     setError("");
     setIsTimePolling(true);
@@ -54,6 +60,34 @@ const Poll = () => {
         setIsStatusPolling(false);
         setError(error.message);
       });
+  };
+
+  const pullData = () => {
+    setError("");
+    setIsDataPulling(true);
+    setPulledData(undefined);
+
+    fetch(`/api/pull?from=${webServer}`).then(async (response) => {
+      if (response.ok) {
+        setPulledData(await response.json());
+        setIsDataPulling(false);
+        return;
+      }
+
+      setError(await response.text());
+      setIsDataPulling(false);
+    });
+  };
+
+  const pushData = () => {
+    setError("");
+    setIsDataPushing(true);
+    setPushedStatus("");
+
+    fetch(`/api/push?from=${webServer}`).then(async (response) => {
+      setPushedStatus(await response.text());
+      setIsDataPushing(false);
+    });
   };
 
   return (
@@ -102,6 +136,50 @@ const Poll = () => {
       </div>
 
       {error && <p className="alert">{error}</p>}
+      <hr />
+      <h2>Replications</h2>
+      <div className="pull-data">
+        <span>
+          <b>Pulled data from server:</b>
+          <br></br>
+          {pulledData
+            ? pulledData.map((data) => {
+                return (
+                  <div className="pulled-block">
+                    <b>Key: </b>
+                    {data.key} | <b>Value: </b> {data.value}
+                  </div>
+                );
+              })
+            : ""}{" "}
+          <br></br>
+        </span>
+        {isDataPulling && (
+          <Spinner animation="border" variant="primary"></Spinner>
+        )}
+        <Button
+          variant="primary"
+          type="submit"
+          onClick={pullData}
+          disabled={!webServer}
+        >
+          Pull Data
+        </Button>
+      </div>
+      <div className="pull-data">
+        <Button
+          variant="primary"
+          type="submit"
+          onClick={pushData}
+          disabled={!webServer}
+        >
+          Push Data to Service
+        </Button>
+        {isDataPushing && (
+          <Spinner animation="border" variant="primary"></Spinner>
+        )}
+        {pushedStatus && <p className="ok">{pushedStatus}</p>}
+      </div>
     </Form>
   );
 };

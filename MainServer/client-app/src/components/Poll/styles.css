@@ -1,6 +1,6 @@
 .polling-stat {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     row-gap: 10px;
 }
 
@@ -15,4 +15,16 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 10px;
+}
+
+.pull-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.pulled-block {
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 2px;
 }
