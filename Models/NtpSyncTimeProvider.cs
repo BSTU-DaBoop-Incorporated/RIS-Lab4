@@ -52,14 +52,7 @@ public class NtpSyncTimeProvider : ISyncTimeProvider, IDisposable
     }
 
 
-    public long SyncTime
-    {
-        get
-        {
-            lock (_timeLock)
-            {
-                return ((DateTimeOffset)_dateTime).ToUnixTimeMilliseconds() * 1000;
-            }
-        }
-    }
+    public long SyncTime =>
+        // lock (_timeLock)
+        ((DateTimeOffset)_dateTime).ToUnixTimeMilliseconds() * 1000;
 }

@@ -46,6 +46,14 @@
             "GuerrillaNtp": {
               "target": "Package",
               "version": "[2.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[6.0.1, )"
             }
           },
           "imports": [

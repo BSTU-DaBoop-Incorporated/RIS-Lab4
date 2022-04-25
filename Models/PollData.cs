@@ -1,4 +1,4 @@
-﻿namespace WebServer.Models;
+﻿namespace TimePolling;
 
 public class PollData
 {

@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MainServer.Repository;
+using Microsoft.AspNetCore.Mvc;
 using TimePolling;
-using WebServer.Models;
 
 namespace MainServer.Controllers;
 
@@ -8,10 +8,17 @@ namespace MainServer.Controllers;
 public class ServerController : Controller
 {
     private readonly HttpClient _client;
+    private readonly MainServerContext _context;
 
-    public ServerController()
+    public ServerController(MainServerContext context)
     {
-        _client = new HttpClient();
+        _context = context;
+        var clientHandler = new HttpClientHandler();
+        clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) =>
+        {
+            return true;
+        };
+        _client = new HttpClient(clientHandler);
     }
 
     [HttpGet("poll")]
@@ -47,5 +54,32 @@ public class ServerController : Controller
         var data = await _client.GetFromJsonAsync<Status>(uri);
 
         return Ok(data);
+    }
+
+    [HttpGet("pull")]
+    public async Task<IActionResult> Pull(string from)
+    {
+        var uri = new Uri($"https://{from}/api/pull");
+        var data = await _client.GetFromJsonAsync<List<Model>>(uri);
+
+        if (data != null)
+        {
+            _context.Models.AddRange(data);
+            await _context.SaveChangesAsync();
+            return Ok(data);
+        }
+
+        return NotFound("No pull data found");
+    }
+
+    [HttpGet("push")]
+    public async Task<IActionResult> Push(string from)
+    {
+        var uri = new Uri($"https://{from}/api/push");
+
+        var models = _context.Models.ToList();
+        var data = await _client.PostAsJsonAsync(uri, models);
+
+        return Ok(await data.Content.ReadAsStringAsync());
     }
 }
